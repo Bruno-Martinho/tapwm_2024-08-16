@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import ListaProdutos from './Componetes/ListaProdutos'
+import ListaProdutos from './Componentes/ListaProdutos'
 
 const produtos = [{
   nome: "Teste",
