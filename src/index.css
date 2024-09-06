@@ -13,7 +13,7 @@ code {
 }
 
 .titulo {
-  font-size: 22tp;
+  font-size: 22pt;
   font-weight: bold;
   color: #333;
 }
@@ -26,9 +26,9 @@ code {
 
 .card{
   display: inline-block;
-  width: 300px;
-  background-color: #fffbb4;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  background-color: #d4d4d4;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 16px;
   margin: 3px;
@@ -36,6 +36,6 @@ code {
 
 .imagem{
   max-width: 80%;
-  max-height: 200px;
+  max-height: 300px;
 }
 

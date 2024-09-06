@@ -10,11 +10,11 @@ import CadastroProduto from './Componentes/CadastroProduto';
 function App() {
   const [produtos, setProdutos] = useState([]);
   useEffect(()=>{
-    carregarProdutos();
+    carregaProdutos();
   }, []);
 
 
-  function carregarProdutos() {
+  function carregaProdutos() {
     axios.get('https://app-api-tapwm.onrender.com/api/produtos')
       .then(res=>{
         setProdutos(res.data);
@@ -26,8 +26,8 @@ function App() {
   return (
     <div>
       <h1>Lista Produtos</h1>
-      <ListaProdutos produtos = {produtos} />
-      <CadastroProduto carregarProdutos= {carregarProdutos} />
+      <ListaProdutos produtos = {produtos} carregaProdutos = {carregaProdutos} />
+      <CadastroProduto carregaProdutos = {carregaProdutos} />
       
     </div>
   );
