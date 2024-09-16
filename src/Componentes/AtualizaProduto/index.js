@@ -31,7 +31,7 @@ export default function AtualizaProduto({carregaProdutos, produto}){
         const descricao = document.getElementById('descricao').value;
         const prod = {nome, preco, foto, descricao};
         console.log(prod);
-        axios.put(`https://app-api-tapwm.onrender.com/api/produtos/${produto._id}´, prod)
+        axios.put("https://app-api-tapwm.onrender.com/api/produtos/${produto._id}", prod)
 
         .then(()=>{
             carregaProdutos();
