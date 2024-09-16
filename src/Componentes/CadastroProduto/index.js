@@ -23,17 +23,18 @@ export default function CadastroProduto({carregaProdutos}) {
             </form>
         </div>
     )
-}
 
-function adicionaProduto(){
-    const nome = document.getElementById('nome').value;
-    const preco = document.getElementById('preco').value;
-    const foto = document.getElementById('foto').value;
-    const descricao = document.getElementById('descricao').value;
-    const produto = {nome, preco, foto, descricao};
-    console.log(produto);
-    axios.post('https://app-api-tapwm.onrender.com/api/produtos', produto).then(()=>{
-        carregaProdutos();
-    });
 
+    function adicionaProduto(){
+        const nome = document.getElementById('nome').value;
+        const preco = document.getElementById('preco').value;
+        const foto = document.getElementById('foto').value;
+        const descricao = document.getElementById('descricao').value;
+        const produto = {nome, preco, foto, descricao};
+        console.log(produto);
+        axios.post('https://app-api-tapwm.onrender.com/api/produtos', produto).then(()=>{
+            carregaProdutos();
+        });
+
+    }
 }
